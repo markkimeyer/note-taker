@@ -1,8 +1,12 @@
 //express dependencies
-const apiRoutes = require("./routes/apiRoutes");
-const htmlRoutes = require("./routes/htmlRoutes");
+
 var express = require("express");
 var app = express();
+
+// const apiRoutes = 
+require("./routes/apiRoutes/apiroutes")(app);
+const htmlRoutes = 
+require("./routes/htmlRoutes");
 
 //for html route
 var path = require("path");
@@ -17,7 +21,7 @@ app.use(express.json());
 //set public folder
 app.use(express.static('public'));
 
-app.use("/api", apiRoutes);
+// app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
 //HTML ROUTES
 
@@ -33,10 +37,10 @@ app.use("/", htmlRoutes);
 
 //     //POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
 
-//     app.post("/api/notes", function (req, res) {
-//         data.push(req.body);
-//         res.json(true);
-//     });
+    app.post("/api/notes", function (req, res) {
+        data.push(req.body);
+        res.json(true);
+    });
 
 
 //     app.post("")
