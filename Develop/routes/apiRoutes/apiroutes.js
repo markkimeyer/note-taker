@@ -17,7 +17,7 @@ module.exports = function (app) {
 
     app.post("/api/notes", function (req, res) {
         let newNote = req.body;
-        console.log("successful API hit");\
+        console.log("successful API hit");
         console.log(newNote);
         });
     
