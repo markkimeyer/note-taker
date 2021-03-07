@@ -17,11 +17,30 @@ module.exports = function (app) {
 
     app.post("/api/notes", function (req, res) {
         let newNote = req.body;
+        let stringify = JSON.stringify(newNote);
         console.log("successful API hit");
-        console.log(newNote);
+        console.log(stringify);
         });
     
     };
 
 
 
+//TEST
+
+// module.exports = function (app) {
+//     app.get("/api/notes", function (req, res) {
+//         console.log("successful get");
+// let savedNotes = res.json(notes);
+// console.log(savedNotes);
+//     });
+
+    
+//     app.post("/api/notes", function (req, res) {
+//         let newNote = req.body;
+//         let stringify = JSON.stringify(newNote);
+//         console.log("successful API hit");
+//         console.log(stringify);
+//         });
+    
+//     };

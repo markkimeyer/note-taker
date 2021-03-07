@@ -3,14 +3,6 @@
 var express = require("express");
 var app = express();
 
-// const apiRoutes = 
-require("./routes/apiRoutes/apiroutes")(app);
-const htmlRoutes = 
-require("./routes/htmlRoutes");
-
-//for html route
-var path = require("path");
-
 //set initial port
 var PORT = process.env.PORT || 3030;
 
@@ -18,11 +10,18 @@ var PORT = process.env.PORT || 3030;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// const apiRoutes = 
+require("./routes/apiRoutes/apiroutes")(app);
+
+const htmlRoutes = 
+require("./routes/htmlRoutes");
+
 //set public folder
 app.use(express.static('public'));
 
-// app.use("/api", apiRoutes);
+// app.use("/", apiRoutes);
 app.use("/", htmlRoutes);
+
 //HTML ROUTES
 
 
