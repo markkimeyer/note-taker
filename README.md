@@ -1,27 +1,22 @@
-# Unit 11 Express Homework: Note Taker
+# Note Taker
+
+ ![License:](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-
-
-## User Story
-
-AS A user, I want to be able to write and save notes
-
-I WANT to be able to delete notes I've written before
-
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-
-## Business Context
-
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
-
-## Acceptance Criteria
-
 An express application allows users to create and save notes. Users can also view and delete previously saved notes
+
+## Installation
+
+To install all necessary materials for this project, run the following command:
+
+npm install
+
+## Usage
+This app uses the express and uuid packages. Be sure to install these locally before proceeding. I also recommend using nodemon.js to start the app. 
 
 
 ## Deployment
 
- This app is deployed on Heroku. [Heroku link(https://damp-mesa-02729.herokuapp.com/) 
+Watch the demonstration of the fully functional application on youtube [here](https://youtu.be/s5ByvAqZ1c0). 
 
-
+The app is live on [Heroku](https://damp-mesa-02729.herokuapp.com/).
